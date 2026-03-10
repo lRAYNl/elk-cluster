@@ -200,7 +200,7 @@ curl -k -X PUT "https://IP:9200/_index_template/filebeat-custom-ilm" \
 Дальше нужно делать только на одной, главной машине
 Заставляем Эластик применить новые ключи без перезагрузки контейнера (вводим свои данные)
 
-``` curl -X POST "https://IP:9200/_nodes/reload_secure_settings" -u elastic:elastic_password -k ```
+``` curl -X POST "https://IP:9200/_nodes/reload_secure_settings" -u elastic:ТВОЙ_ПАРОЛЬ -k ```
 
 Подключаем s3 хранилище
 
