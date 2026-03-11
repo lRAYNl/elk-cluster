@@ -61,7 +61,7 @@ services:
     container_name: kibana-${NODE_NAME}
     environment:
       - SERVER_NAME=kibana-${NODE_NAME}
-      - ELASTICSEARCH_HOSTS=https://elasticsearch:9200
+      - ELASTICSEARCH_HOSTS=https://${NODE_NAME}:9200
       - ELASTICSEARCH_USERNAME=kibana_system
       - ELASTICSEARCH_PASSWORD=${KIBANA_PASSWORD}
       - ELASTICSEARCH_SSL_VERIFICATIONMODE=none
